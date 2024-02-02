@@ -16,8 +16,8 @@ class Article (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,
     var title: String,
-    var body: String,
-    var authorId: Long,
+    var body: String? = null,
+    var authorId: Long? = null,
 ): BaseEntity() {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
