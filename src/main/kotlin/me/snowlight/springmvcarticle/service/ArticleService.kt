@@ -15,7 +15,7 @@ class ArticleService(
         return repository.findByIdOrNull(id) ?: throw NoArticleFound("No article found (id:$id)")
     }
 
-    fun getAll(title: String?): List<Article> {
+    fun getAll(title: String? = ""): List<Article> {
         return if (title.isNullOrEmpty()) {
             repository.findAll()
         } else {

@@ -44,9 +44,9 @@ open class BaseEntity(
     @CreatedDate
     var createdAt: LocalDateTime? = null,
     @LastModifiedDate
-    var updatedAT: LocalDateTime? = null,
+    var updatedAt: LocalDateTime? = null,
 ) {
     override fun toString(): String {
-        return "createdAt=$createdAt, updatedAT=$updatedAT"
+        return "createdAt=$createdAt, updatedAT=$updatedAt"
     }
 }
