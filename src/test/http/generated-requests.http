@@ -1,0 +1,30 @@
+###
+POST {{domain}}/article
+Content-Type: application/json
+
+{
+  "title": "title 1",
+  "body": "title 2",
+  "authorId": 0
+}
+
+###
+GET {{domain}}/article/1
+
+###
+GET {{domain}}/article/all
+
+###
+GET {{domain}}/article/all?title=232
+
+###
+PUT {{domain}}/article/1
+Content-Type: application/json
+
+{
+  "title": "2323232",
+  "authorId": 1234444
+}
+
+###
+DELETE {{domain}}/article/2
