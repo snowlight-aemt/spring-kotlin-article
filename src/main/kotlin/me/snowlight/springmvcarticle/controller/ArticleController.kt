@@ -1,8 +1,8 @@
 package me.snowlight.springmvcarticle.controller
 
 import me.snowlight.springmvcarticle.service.ArticleService
-import me.snowlight.springmvcarticle.service.ReqUpdate
 import me.snowlight.springmvcarticle.service.ReqCreate
+import me.snowlight.springmvcarticle.service.ReqUpdate
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
